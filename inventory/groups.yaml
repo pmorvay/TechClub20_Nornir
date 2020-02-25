@@ -1,0 +1,48 @@
+---
+global:
+    data:
+        domain: global.local
+        asn: 1
+
+cisco-rtr:
+  platform: 'cisco_ios'
+  data:
+    img: 'cisco-rtr_ios.txt'
+    backup_img: 'c1100-universalk9_ias.16.09.03.SPA.bin'
+cisco-xr:
+#  platform: 'cisco_iosxr'
+  data:
+    img: 'text_ios.txt'
+    backup_img: 'c880data-universalk9-mz.154-2.T1.bin'
+cisco-ios:
+  platform: 'cisco_ios'
+  data:
+    img: 'c880data-universalk9-mz.155-3.M8.bin'
+    backup_img: 'c880data-universalk9-mz.154-2.T1.bin'
+xesandbox:
+  platform: 'cisco_ios'
+  data:
+    img: 'c1100-universalk9_ias.16.09.03.SPA.bin'
+    backup_img: 'c880data-universalk9-mz.154-2.T1.bin'
+
+home_rtr:
+  platform: 'cisco_ios'
+  data:
+    img: 'c1100-universalk9.17.01.01.SPA.bin'
+    backup_img: 'c1100-universalk9.16.12.01a.SPA.bin'
+
+
+RSP2:
+  platform: 'cisco_ios'
+  data:
+    img: 'asr900rsp2-universalk9_npe.16.12.02a.SPA.bin'
+    backup_img: 'asr900rsp2-universalk9_npe.03.18.06.SP.156-2.SP6-ext.bin'
+secret_group:
+  platform: 'cisco_ios'
+  data:
+    img: 'asr920igp-universalk9.03.18.04.SP.156-2.SP4-ext.bin'
+    backup_img: 'c880data-universalk9-mz.154-2.T1.bin'
+    domain: 'secret.local'
+
+xrsandbox:
+  platform: 'cisco_iosxr'

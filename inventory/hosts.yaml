@@ -1,0 +1,51 @@
+---
+sandXE.cisco:
+    hostname: ios-xe-mgmt-latest.cisco.com
+    port: 8181
+    username: developer
+    password: C1sco12345
+    platform: ios
+    groups:
+      - cisco-rtr
+      - secret_group
+      - xesandbox
+
+ASR920.cisco:
+    hostname: 192.168.103.204
+#    port: 8181
+    username: nornir
+    password: nornir
+    platform: ios
+    connection_options:
+        netmiko:
+            extras:
+                global_delay_factor: 2
+    groups:
+#        - cisco-rtr
+        - RSP2
+
+#cisco1.domain.com:
+#    hostname: 192.168.4.1
+##    port: 8181
+#    username: nornir
+#    password: nornir
+##    platform: ios
+#    connection_options:
+#        netmiko:
+#            extras:
+#                global_delay_factor: 2
+#    groups:
+##        - cisco-rtr
+#        - home_rtr
+
+
+sandXR.cisco:
+    hostname: sbx-iosxr-mgmt.cisco.com
+    port: 8181
+    username: admin
+    password: C1sco12345
+    platform: iosxr
+    groups:
+      - cisco-xr
+      - secret_group
+      - xrsandbox
